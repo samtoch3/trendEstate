@@ -313,6 +313,33 @@
             margin: 0;
         }
         
+        .outer-div {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .inner-div-1 {
+            margin: auto;
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .inner-div-2 {
+            margin: auto;
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .inner-div-1,
+            .inner-div-2 {
+                max-width: 100%;
+            }
+        }
+        
          :where(.wp-block-columns.is-layout-flex) {
             gap: 2em;
         }
@@ -555,7 +582,6 @@
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.chocoblast.fr/xmlrpc.php?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.chocoblast.fr/wp-includes/wlwmanifest.xml" />
     <meta name="generator" content="WordPress 6.1.1" />
-    <link rel="shortlink" href="https://www.chocoblast.fr/" />
     <link rel="alternate" type="application/json+oembed" href="https://www.chocoblast.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chocoblast.fr%2F" />
     <link rel="alternate" type="text/xml+oembed" href="https://www.chocoblast.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chocoblast.fr%2F&#038;format=xml" />
     <link type="text/css" rel="stylesheet" href="https://www.chocoblast.fr/wp-content/plugins/easy-spoiler/easy-spoiler.css" />
@@ -619,10 +645,10 @@
         }
     </style>
     <!-- Aucune version AMP HTML n&#039;est disponible pour cette URL. -->
-    <link rel="icon" href="https://www.chocoblast.fr/wp-content/uploads/2016/10/cropped-chocolatine-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://www.chocoblast.fr/wp-content/uploads/2016/10/cropped-chocolatine-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://www.chocoblast.fr/wp-content/uploads/2016/10/cropped-chocolatine-180x180.png" />
-    <meta name="msapplication-TileImage" content="https://www.chocoblast.fr/wp-content/uploads/2016/10/cropped-chocolatine-270x270.png" />
+    <link rel="icon" href="logo2.png" sizes="32x32" />
+    <link rel="icon" href="logo2.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="logo2.png" />
+    <meta name="msapplication-TileImage" content="logo2.png" />
 </head>
 
 <body class="home page-template page-template-page-templates page-template-front-page page-template-page-templatesfront-page-php page page-id-19 show-tagline full-width-layout">
@@ -674,7 +700,7 @@
     <!-- #masthead -->
 
     <div id="content" class="site-content">
-        <div class="hero">
+        <div class="hero" style="background-image:url('3.jpeg'); width:100%;">
             <article id="post-19" class="post-19 page type-page status-publish has-post-thumbnail hentry">
                 <div class="wrapper">
                     <div class="post-thumbnail">
@@ -761,29 +787,36 @@
             <!-- .front-page-block -->
             <div class="front-page-block clear">
                 <article id="post-15" class="post-15 page type-page status-publish hentry">
-                    <div class="entry-content">
-                        <h1 style="text-align: center">Adresse du bien</h1>
-                        <br />
+                    <div class="entry-content outer-div">
+                        <div class="inner-div-1">
+                            <h1 style="text-align: center">Adresse du bien</h1>
+                            <br />
+                            <form method="post" action="#">
+                                <label>N° de la Rue </label><input type="text" /><br /><br />
+                                <label>Rue </label><input type="text" /><br /><br />
+                                <label>Code Postal </label><input type="text" /><br /><br />
+                                <label>Ville </label><input type="text" /><br />
+                            </form>
+                        </div>
+                        <br/> <br/>
 
-                        <form method="post" action="#">
-                            <label>N° de la Rue </label><input type="text" /><br /><br />
-                            <label>Rue </label><input type="text" /><br /><br />
-                            <label>Code Postal </label><input type="text" /><br /><br />
-                            <label>Ville </label><input type="text" /><br />
-                        </form>
-                    </div>
-                    <!-- .entry-content -->
+                        <div class="inner-div-2">
+                            <img width="520" height="528" alt="" decoding="async" data-src="carte-bordeaux.jpg" class="attachment-sequential-featured-image size-sequential-featured-image wp-post-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                </div>
+
+                        </div>
+                        <!-- .entry-content -->
                 </article>
                 <!-- #post-## -->
-            </div>
-            <!-- .front-page-block -->
+                </div>
+                <!-- .front-page-block -->
 
-            <div class="front-page-block clear">
-                <article id="post-74" class="post-74 page type-page status-publish hentry">
-                    <div class="entry-content">
-                        <h1 style="text-align: center">Annexes :</h1>
-                        <br />
-                        <i method="post" action="#">
+                <div class="front-page-block clear">
+                    <article id="post-74" class="post-74 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <h1 style="text-align: center">Annexes :</h1>
+                            <br />
+                            <i method="post" action="#">
                     <label> Balcons </label>&nbsp;&nbsp;&nbsp;
                     <i style="background-color: white">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -798,8 +831,8 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     
                   </i><br /><br />
-                        <label>Térasses </label>&nbsp;&nbsp;
-                        <i style="background-color: white">
+                            <label>Térasses </label>&nbsp;&nbsp;
+                            <i style="background-color: white">
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <input type="radio" id="oui" name="terrasse" value="oui" />
                           <label for="oui">Oui </label>
@@ -813,8 +846,8 @@
                     
                         </i><br /><br />
 
-                        <label>Caves  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <i style="background-color: white">
+                            <label>Caves  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i style="background-color: white">
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <input type="radio" id="oui" name="caves" value="oui" />
                           <label for="oui">Oui </label>
@@ -828,7 +861,7 @@
                     
                         </i><br /><br />
 
-                        <label>Possibilité de stationnement </label
+                            <label>Possibilité de stationnement </label
                     >&nbsp;&nbsp;&nbsp;
                     <i style="background-color: white"
                       >&nbsp;&nbsp;<input
@@ -838,108 +871,108 @@
                         value="aucune"
                       />
                       <label for="aucune">Aucune </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" id="exterieur" name="stationnement" value="exterieur" />
-                        <label for="exterieur">Exterieur </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" id="box" name="stationnement" value="box" />
-                        <label for="box">Box </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" id="garage" name="stationnement" value="garage" />
-                        <label for="garage">Garage </label></i><br />
-                        </form>
-                    </div>
-                    <!-- .entry-content -->
-                </article>
-                <!-- #post-## -->
-            </div>
+                            <input type="radio" id="exterieur" name="stationnement" value="exterieur" />
+                            <label for="exterieur">Exterieur </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="box" name="stationnement" value="box" />
+                            <label for="box">Box </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="garage" name="stationnement" value="garage" />
+                            <label for="garage">Garage </label></i><br />
+                            </form>
+                        </div>
+                        <!-- .entry-content -->
+                    </article>
+                    <!-- #post-## -->
+                </div>
 
-            <div class="front-page-block clear">
-                <article id="post-15" class="post-15 page type-page status-publish hentry">
-                    <div class="entry-content">
-                        <h1 style="text-align: center">Caractéristiques du bien</h1>
-                        <br />
+                <div class="front-page-block clear">
+                    <article id="post-15" class="post-15 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <h1 style="text-align: center">Caractéristiques du bien</h1>
+                            <br />
 
-                        <form method="post" action="#">
-                            <label>Surface habitable (en m²) </label><input type="text" /><br /><br />
-                            <label>Nombre de pièces </label><input type="text" /><br /><br />
-                            <label>Nombre de salle de bain </label><input type="text" /><br /><br />
-                            <label>Etes-vous au dernier étage ? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="oui" name="dernier-etage" value="oui" />
-                            <label for="oui">Oui </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="non" name="dernier-etage" value="non" />
-                            <label for="non">Non </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </form>
-                    </div>
-                    <!-- .entry-content -->
-                </article>
-                <!-- #post-## -->
-            </div>
-
-
-            <div class="front-page-block clear">
-                <article id="post-15" class="post-15 page type-page status-publish hentry">
-                    <div class="entry-content">
-                        <h1 style="text-align: center">Précision sur le logement</h1>
-                        <br />
-
-                        <form method="post" action="#">
-                            <label>Année de construction </label><input type="text" /><br /><br />
-                            <label>Etat du bien </label><input type="text" /><br /><br />
-                            <label>Type du bien </label><input type="text" /><br /><br />
-                            <label>Standing </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="standard" name="standing" value="standard" />
-                            <label for="standard">Standard </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="eleve" name="standing" value="eleve" />
-                            <label for="eleve">Elévé </label><br /><br />
-                            <label>Etes-vous le propriétaire ? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="oui" name="proprio" value="oui" />
-                            <label for="oui">Oui </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="non" name="proprio" value="non" />
-                            <label for="non">Non </label><br /><br />
-                            <label>Voulez-vous le vendre ? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="oui" name="vente" value="oui" />
-                            <label for="oui">Oui </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="non" name="vente" value="non" />
-                            <label for="non">Non </label><br />
-                        </form>
-                    </div>
-                    <!-- .entry-content -->
-                </article>
-                <!-- #post-## -->
-            </div>
-
-            <div class="front-page-block clear">
-                <article id="post-15" class="post-15 page type-page status-publish hentry">
-                    <div class="entry-content">
-                        <h1 style="text-align: center">Vous y êtes presque...</h1>
-                        <br />
-                        <p>Pour acceder au resultat, veuillez renseigner vos informations</p>
-                        <br />
-                        <form method="post" action="#">
-                            <label>Civilité </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="mme" name="civilite" value="mme" />
-                            <label for="mme">Madame </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="m" name="civilite" value="m" />
-                            <label for="m">Monsieur </label><br /><br />
-                            <label>Prenon </label><input type="text" /><br /><br />
-                            <label>Nom </label><input type="text" /><br /><br />
-                            <label>Adresse e-mail </label><input type="text" /><br /><br />
-                            <label>Numero de telephone </label><input type="text" /><br /><br />
-                            <label>Pays </label><input type="text" /><br /><br />
-                            <input type="checkbox" />&nbsp;&nbsp;<label>Je souhaite être informé(e) si des biens similaires sont mis en vente. </label>
-                        </form>
-                    </div>
-                    <!-- .entry-content -->
-                </article>
-                <!-- #post-## -->
-            </div>
+                            <form method="post" action="#">
+                                <label>Surface habitable (en m²) </label><input type="text" /><br /><br />
+                                <label>Nombre de pièces </label><input type="text" /><br /><br />
+                                <label>Nombre de salle de bain </label><input type="text" /><br /><br />
+                                <label>Etes-vous au dernier étage ? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="oui" name="dernier-etage" value="oui" />
+                                <label for="oui">Oui </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="non" name="dernier-etage" value="non" />
+                                <label for="non">Non </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </form>
+                        </div>
+                        <!-- .entry-content -->
+                    </article>
+                    <!-- #post-## -->
+                </div>
 
 
-            <div class="front-page-block clear">
+                <div class="front-page-block clear">
+                    <article id="post-15" class="post-15 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <h1 style="text-align: center">Précision sur le logement</h1>
+                            <br />
 
-                <!-- #post-## -->
+                            <form method="post" action="#">
+                                <label>Année de construction </label><input type="text" /><br /><br />
+                                <label>Etat du bien </label><input type="text" /><br /><br />
+                                <label>Type du bien </label><input type="text" /><br /><br />
+                                <label>Standing </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="standard" name="standing" value="standard" />
+                                <label for="standard">Standard </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="eleve" name="standing" value="eleve" />
+                                <label for="eleve">Elévé </label><br /><br />
+                                <label>Etes-vous le propriétaire ? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="oui" name="proprio" value="oui" />
+                                <label for="oui">Oui </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="non" name="proprio" value="non" />
+                                <label for="non">Non </label><br /><br />
+                                <label>Voulez-vous le vendre ? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="oui" name="vente" value="oui" />
+                                <label for="oui">Oui </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="non" name="vente" value="non" />
+                                <label for="non">Non </label><br />
+                            </form>
+                        </div>
+                        <!-- .entry-content -->
+                    </article>
+                    <!-- #post-## -->
+                </div>
 
-                <!-- #content -->
-            </div>
-            <!-- #primary -->
+                <div class="front-page-block clear">
+                    <article id="post-15" class="post-15 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <h1 style="text-align: center">Vous y êtes presque...</h1>
+                            <br />
+                            <p>Pour acceder au resultat, veuillez renseigner vos informations</p>
+                            <br />
+                            <form method="post" action="#">
+                                <label>Civilité </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="mme" name="civilite" value="mme" />
+                                <label for="mme">Madame </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="m" name="civilite" value="m" />
+                                <label for="m">Monsieur </label><br /><br />
+                                <label>Prenon </label><input type="text" /><br /><br />
+                                <label>Nom </label><input type="text" /><br /><br />
+                                <label>Adresse e-mail </label><input type="text" /><br /><br />
+                                <label>Numero de telephone </label><input type="text" /><br /><br />
+                                <label>Pays </label><input type="text" /><br /><br />
+                                <input type="checkbox" />&nbsp;&nbsp;<label>Je souhaite être informé(e) si des biens similaires sont mis en vente. </label>
+                            </form>
+                        </div>
+                        <!-- .entry-content -->
+                    </article>
+                    <!-- #post-## -->
+                </div>
+
+
+                <div class="front-page-block clear">
+
+                    <!-- #post-## -->
+
+                    <!-- #content -->
+                </div>
+                <!-- #primary -->
             </div>
             <!-- #content -->
 
@@ -961,7 +994,7 @@
             </div>
             <!-- #tertiary -->
 
-            <nav class="footer-navigation" role="navigation">
+            <nav class="footer-navigation" role="navigation" style="background-color:#072A59;">
                 <div class="menu-footer">
                     <ul id="menu-pied-de-page" class="clear">
                         <li id="menu-item-252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-252">
@@ -994,110 +1027,110 @@
                 </div>
             </nav>
 
-        </div>
-        <!-- #page -->
+            </div>
+            <!-- #page -->
 
-        <script type="text/javascript" id="countdown-script-js-extra">
-            /* <![CDATA[ */
-            var tCountAjax = {
-                ajaxurl: "https:\/\/www.chocoblast.fr\/wp-admin\/admin-ajax.php",
-                api_nonce: "cf378d85ed",
-                api_url: "https:\/\/www.chocoblast.fr\/wp-json\/tminus\/v1\/",
-                countdownNonce: "5898e1ced8",
-                tminusnow: '{"now":"12\\\/17\\\/2022 07:40:02"}',
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/t-countdown/js/jquery.t-countdown.min.js?ver=2.4.6" id="countdown-script-js"></script>
-        <script type="text/javascript" id="toc-front-js-extra">
-            /* <![CDATA[ */
-            var tocplus = {
-                smooth_scroll: "1",
-                visibility_show: "Afficher",
-                visibility_hide: "Cacher",
-                visibility_hide_by_default: "1",
-                width: "Auto",
-            };
-            /* ]]> */
-        </script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2212" id="toc-front-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/navigation.js?ver=20141022" id="sequential-navigation-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/thumbnail.js?ver=20141022" id="sequential-thumbnail-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/skip-link-focus-fix.js?ver=20130115" id="sequential-skip-link-focus-fix-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/sequential.js?ver=20141022" id="sequential-script-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=6.1.1" id="jquery-fancybox-js"></script>
-        <script type="text/javascript" id="jquery-fancybox-js-after">
-            var fb_timeout,
-                fb_opts = {
-                    overlayShow: true,
-                    hideOnOverlayClick: true,
-                    showCloseButton: true,
-                    margin: 20,
-                    enableEscapeButton: true,
-                    autoScale: true,
+            <script type="text/javascript" id="countdown-script-js-extra">
+                /* <![CDATA[ */
+                var tCountAjax = {
+                    ajaxurl: "https:\/\/www.chocoblast.fr\/wp-admin\/admin-ajax.php",
+                    api_nonce: "cf378d85ed",
+                    api_url: "https:\/\/www.chocoblast.fr\/wp-json\/tminus\/v1\/",
+                    countdownNonce: "5898e1ced8",
+                    tminusnow: '{"now":"12\\\/17\\\/2022 07:40:02"}',
                 };
-            if (typeof easy_fancybox_handler === "undefined") {
-                var easy_fancybox_handler = function() {
-                    jQuery(
-                        [
-                            ".nolightbox",
-                            "a.wp-block-fileesc_html__button",
-                            "a.pin-it-button",
-                            "a[href*='pinterest.com\/pin\/create']",
-                            "a[href*='facebook.com\/share']",
-                            "a[href*='twitter.com\/share']",
-                        ].join(",")
-                    ).addClass("nofancybox");
-                    jQuery("a.fancybox-close").on("click", function(e) {
-                        e.preventDefault();
-                        jQuery.fancybox.close();
-                    });
-                    /* IMG */
-                    var fb_IMG_select = jQuery(
-                        'a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a),area[href*=".png" i]:not(.nofancybox)'
-                    );
-                    fb_IMG_select.addClass("fancybox image");
-                    var fb_IMG_sections = jQuery(
-                        ".gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery"
-                    );
-                    fb_IMG_sections.each(function() {
-                        jQuery(this)
-                            .find(fb_IMG_select)
-                            .attr("rel", "gallery-" + fb_IMG_sections.index(this));
-                    });
-                    jQuery("a.fancybox,area.fancybox,.fancybox>a").each(function() {
-                        jQuery(this).fancybox(
-                            jQuery.extend(true, {}, fb_opts, {
-                                transitionIn: "elastic",
-                                easingIn: "easeOutBack",
-                                transitionOut: "elastic",
-                                easingOut: "easeInBack",
-                                opacity: false,
-                                hideOnContentClick: false,
-                                titleShow: true,
-                                titlePosition: "over",
-                                titleFromAlt: true,
-                                showNavArrows: true,
-                                enableKeyboardNav: true,
-                                cyclic: false,
-                            })
+                /* ]]> */
+            </script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/t-countdown/js/jquery.t-countdown.min.js?ver=2.4.6" id="countdown-script-js"></script>
+            <script type="text/javascript" id="toc-front-js-extra">
+                /* <![CDATA[ */
+                var tocplus = {
+                    smooth_scroll: "1",
+                    visibility_show: "Afficher",
+                    visibility_hide: "Cacher",
+                    visibility_hide_by_default: "1",
+                    width: "Auto",
+                };
+                /* ]]> */
+            </script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2212" id="toc-front-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/navigation.js?ver=20141022" id="sequential-navigation-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/thumbnail.js?ver=20141022" id="sequential-thumbnail-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/skip-link-focus-fix.js?ver=20130115" id="sequential-skip-link-focus-fix-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/themes/sequential/js/sequential.js?ver=20141022" id="sequential-script-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=6.1.1" id="jquery-fancybox-js"></script>
+            <script type="text/javascript" id="jquery-fancybox-js-after">
+                var fb_timeout,
+                    fb_opts = {
+                        overlayShow: true,
+                        hideOnOverlayClick: true,
+                        showCloseButton: true,
+                        margin: 20,
+                        enableEscapeButton: true,
+                        autoScale: true,
+                    };
+                if (typeof easy_fancybox_handler === "undefined") {
+                    var easy_fancybox_handler = function() {
+                        jQuery(
+                            [
+                                ".nolightbox",
+                                "a.wp-block-fileesc_html__button",
+                                "a.pin-it-button",
+                                "a[href*='pinterest.com\/pin\/create']",
+                                "a[href*='facebook.com\/share']",
+                                "a[href*='twitter.com\/share']",
+                            ].join(",")
+                        ).addClass("nofancybox");
+                        jQuery("a.fancybox-close").on("click", function(e) {
+                            e.preventDefault();
+                            jQuery.fancybox.close();
+                        });
+                        /* IMG */
+                        var fb_IMG_select = jQuery(
+                            'a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a),area[href*=".png" i]:not(.nofancybox)'
                         );
-                    });
+                        fb_IMG_select.addClass("fancybox image");
+                        var fb_IMG_sections = jQuery(
+                            ".gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery"
+                        );
+                        fb_IMG_sections.each(function() {
+                            jQuery(this)
+                                .find(fb_IMG_select)
+                                .attr("rel", "gallery-" + fb_IMG_sections.index(this));
+                        });
+                        jQuery("a.fancybox,area.fancybox,.fancybox>a").each(function() {
+                            jQuery(this).fancybox(
+                                jQuery.extend(true, {}, fb_opts, {
+                                    transitionIn: "elastic",
+                                    easingIn: "easeOutBack",
+                                    transitionOut: "elastic",
+                                    easingOut: "easeInBack",
+                                    opacity: false,
+                                    hideOnContentClick: false,
+                                    titleShow: true,
+                                    titlePosition: "over",
+                                    titleFromAlt: true,
+                                    showNavArrows: true,
+                                    enableKeyboardNav: true,
+                                    cyclic: false,
+                                })
+                            );
+                        });
+                    };
+                }
+                var easy_fancybox_auto = function() {
+                    setTimeout(function() {
+                        jQuery("a#fancybox-auto,#fancybox-auto>a").first().trigger("click");
+                    }, 1000);
                 };
-            }
-            var easy_fancybox_auto = function() {
-                setTimeout(function() {
-                    jQuery("a#fancybox-auto,#fancybox-auto>a").first().trigger("click");
-                }, 1000);
-            };
-            jQuery(easy_fancybox_handler);
-            jQuery(document).on("post-load", easy_fancybox_handler);
-            jQuery(easy_fancybox_auto);
-        </script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1" id="jquery-easing-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script>
-        <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.12.4" id="smush-lazy-load-js"></script>
+                jQuery(easy_fancybox_handler);
+                jQuery(document).on("post-load", easy_fancybox_handler);
+                jQuery(easy_fancybox_auto);
+            </script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1" id="jquery-easing-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script>
+            <script type="text/javascript" src="https://www.chocoblast.fr/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.12.4" id="smush-lazy-load-js"></script>
 </body>
 
 </html>
